@@ -1,0 +1,56 @@
+<!--barra de navegacion (varnav)
+    nota 
+    Se dejara solo el header para que al ser incluidor por un archivo
+    este se ejecute correctamente.
+    cuando se define como un archivo completo HTML los desplegables no funcionan
+    de manera correcta cuando son llamdos por un archivo externo -->
+
+    <header>
+        <nav>
+        <a href="inicio.php" class="casa"><img src="../../img/logo.png" class="logo"> </a>
+        
+        <div class="input-group" id="search">
+            <form action="busqueda.php" method="get" >
+                <div class="form-outline">
+                <input type="search"  class="form-control" placeholder="Busca tu producto" name="Busqueda"/>
+                <label class="form-label" for="form1"></label>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+        <div id="accesos">
+            <a href="R"><i class="far fa-file-alt">REGISTRO</i></a>
+            <a href="L"><i class="far fa-user-circle">LOG-IN</i></a>
+        </div>
+
+        <div class="dropdown" id="categoria">
+            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">
+                Categorias</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="hogar"><i class="fas fa-home">Hogar</i></a></li>
+                <li><a class="dropdown-item" href="electro"><i class="fas fa-tv">Electrodomesticos</i></a></li>
+                <li><a class="dropdown-item" href="tec"><i class="fas fa-laptop">Tecnologia</i></a></li>
+                <li><a class="dropdown-item" href="juge"><i class="fas fa-table-tennis">Juguetes</i></a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown" id="ayuda">
+            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Ayuda</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="repor"><i class="fas fa-bell">Reportar</i></a></li>
+                <li><a class="dropdown-item" href="Nosotros.php"><i class="fas fa-hand-holding">Nosotros</i></a></li>
+                <li><a class="dropdown-item" href="manu"><i class="fab fa-readme">Manual de usuario</i></a></li>
+            </ul>
+        </div>
+
+
+        </nav>
+
+    </header>
